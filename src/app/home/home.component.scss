@@ -1,0 +1,252 @@
+.back{
+  width: 100%;
+  height: 100vh;
+  background: url('../../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.header{
+  width: 100%;
+  background-color: white;
+}
+
+.title-div, .corner-div, button{
+  background:linear-gradient( to bottom, #858c91, #eee, #858c91);
+  border: 5px solid rgb(51, 51, 51);
+}
+
+.title-div{
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: none;
+
+  h1{
+    width: 70%;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    z-index: 2;
+  }
+}
+
+.header-div{
+  position: relative;
+
+  img{
+    width: 22%;
+    position: absolute;
+    left: 39%;
+    filter: grayscale(100%);
+  }
+
+  h2{
+    width: 40%;
+    text-align: center;
+  }
+}
+
+.corner-div{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    transform: rotate(315deg);
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.corner-1{
+  left: -74px;
+  top: -78px;
+
+  a{
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+  }
+}
+
+.corner-2{
+  right: -74px;
+  top: -78px;
+
+  a{
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
+
+.container{
+  background-color: white;
+  width: 90%;
+  height: 90px;
+  margin: 6em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h2{
+    text-align: center;
+  }
+
+  input{
+    width: 40px;
+  }
+}
+
+.inputs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+
+  button{
+    width: 100px;
+    font-size: 18px;
+    background-color: white;
+    border: 3px solid rgb(51, 51, 51);
+    cursor: pointer;
+    outline: 0;
+  }
+}
+
+.generated{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/moon.gif');
+  background-size: cover;
+
+  p{
+    color: white;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 27.5em) {
+
+  .header-div{
+
+    img{
+      width: 15%;
+      left: 42.5%;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+  .header-div{
+
+    img{
+      width: 15%;
+      left: 42.5%;
+    }
+  }
+
+  .container{
+    width: 80%;
+    margin: 10em auto;
+    height: 120px;
+
+    p{
+      font-size: 24px;
+    }
+
+    input{
+      width: 50px;
+      height: 30px;
+    }
+
+    button{
+      width: 170px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 62em) {
+
+  .header{
+    h1{
+      font-size: 36px;
+    }
+  }
+
+  .header-div{
+
+    img{
+      width: 10%;
+      left: 45%;
+      margin-top: 20px;
+    }
+  }
+
+  .container{
+    width: 50%;
+
+    p{
+      font-size: 24px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 87em) {
+
+  .header{
+    h1{
+      font-size: 36px;
+    }
+  }
+
+  .header-div{
+
+    img{
+      width: 7%;
+      left: 46.5%;
+    }
+  }
+
+  .container{
+    width: 30%;
+    margin: 12em auto 6em;
+    height: 120px;
+
+    p{
+      font-size: 24px;
+    }
+
+    input{
+      width: 50px;
+      height: 30px;
+    }
+
+    button{
+      width: 170px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+
+}
+
+
+
